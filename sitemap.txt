@@ -1,12 +1,11 @@
 
-http://username.github.com/archive.html
-http://username.github.com/atom.xml
-http://username.github.com/categories.html
-http://username.github.com/index.html
-http://username.github.com/pages.html
-http://username.github.com/sitemap.txt
-http://username.github.com/tags.html
+http://pieboy.github.com/archive.html
+http://pieboy.github.com/atom.xml
+http://pieboy.github.com/categories.html
+http://pieboy.github.com/index.html
+http://pieboy.github.com/pages.html
+http://pieboy.github.com/sitemap.txt
+http://pieboy.github.com/tags.html
 
-http://username.github.com/Entertainment/justforfunpost.html
-http://username.github.com/lessons/coderuby.html
-http://username.github.com/lessons/jekyll-introduction.html
+http://pieboy.github.com/mywork/php/TalentHunt.html
+http://pieboy.github.com/mywork/php/Result-Grabber.html

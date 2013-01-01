@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      
+        Result Grabber - 
+      
+      RaviTeja
+    </title>
+    
+    <meta name="author" content="Ravi Teja">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+    
+    <script src="/assets/themes/hooligan/js/prism.js"></script>
+    <link type="text/css" rel="stylesheet" href="/assets/themes/hooligan/css/prismdark.css"/>
+    
+
+    <link href="/assets/themes/hooligan/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">    
+    <link rel="stylesheet" type="text/css" href="/assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css" />
+    <link href="/assets/themes/hooligan/css/pygments.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/hooligan/css/darkstrap.css" rel="stylesheet" type="text/css" media="all">    
+    <link href="/assets/themes/hooligan/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    
+    <!-- fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>      
+
+
+          <a class="brand" href="/">RaviTeja</a>
+
+
+          <div class="nav-collapse">
+            <ul class="nav">
+              
+              
+              
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+            </ul>
+            <ul class="nav pull-right social visible-desktop">
+              <li class="divider-vertical"></li>
+              
+                <li>
+                  <a href="https://www.github.com/pieboy" class="zocial github icon" target="_blank">
+                    <span class="hidden-desktop">Github</a>
+                  </a>
+                </li>
+              
+                  
+              
+                <li>
+                  <a href="http://www.twitter.com/pieboy007" class="zocial twitter icon" target="_blank">
+                  <span class="hidden-desktop">Twitter</a>
+                  </a>
+                </li>
+                                        
+              
+                <li>
+                  <a href="http://www.facebook.com/pieboy007" class="zocial facebook icon" target="_blank">
+                    <span class="hidden-desktop">Facebook</a>
+                  </a>
+                </li>
+                         
+                                  
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content">
+        
+<div class="page-header">
+  <h1>
+    Result Grabber 
+    
+      <small>A result fecthing php script</small>
+    
+  </h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <h1 id='results_grabber'>Results Grabber</h1>
+
+<p>This is a different script i wrote this script just to get the results from all the semesters at once you can view this script running <a href='http://cseace.rs.af.cm/results.php'>here</a> here is the source of this script</p>
+<div class='highlight'><pre><code class='php'><span class='x'>&lt;form action=&quot;&quot; method=&quot;get&quot;&gt;</span>
+<span class='x'>	Roll Number=&lt;input type=&quot;text&quot; name=&quot;no&quot; /&gt;&lt;input type=&quot;submit&quot; value=&quot;go&quot; /&gt;</span>
+<span class='x'>&lt;/form&gt;</span>
+<span class='cp'>&lt;?php</span>
+<span class='k'>if</span><span class='p'>(</span><span class='nb'>isset</span><span class='p'>(</span><span class='nv'>$_GET</span><span class='p'>[</span><span class='s1'>&#39;no&#39;</span><span class='p'>])){</span>
+<span class='nv'>$no</span><span class='o'>=</span><span class='nv'>$_GET</span><span class='p'>[</span><span class='s1'>&#39;no&#39;</span><span class='p'>];</span>
+<span class='k'>if</span><span class='p'>(</span><span class='o'>!</span><span class='nb'>isset</span><span class='p'>(</span><span class='nv'>$_GET</span><span class='p'>[</span><span class='s1'>&#39;a&#39;</span><span class='p'>]))</span><span class='nv'>$a</span><span class='o'>=</span><span class='mi'>1</span><span class='p'>;</span>
+<span class='k'>else</span> <span class='nv'>$a</span><span class='o'>=</span><span class='nv'>$_GET</span><span class='p'>[</span><span class='s1'>&#39;a&#39;</span><span class='p'>];</span>
+<span class='k'>echo</span> <span class='s2'>&quot; 1 year &quot;</span><span class='p'>;</span>
+<span class='nx'>pmarks</span><span class='p'>(</span><span class='mi'>1</span><span class='p'>,</span><span class='nv'>$_GET</span><span class='p'>[</span><span class='s1'>&#39;r&#39;</span><span class='p'>]</span><span class='o'>==</span><span class='mi'>1</span><span class='o'>?</span><span class='nv'>$a</span><span class='o'>:</span><span class='mi'>1</span><span class='p'>,</span><span class='nv'>$no</span><span class='p'>);</span>
+
+<span class='k'>echo</span> <span class='nv'>$a</span><span class='o'>==</span><span class='mi'>5</span><span class='o'>?:</span><span class='s1'>&#39;&lt;a href=&quot;?no=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='o'>.</span><span class='s1'>&#39;&amp;r=1&amp;a=&#39;</span><span class='o'>.</span><span class='p'>(</span><span class='nv'>$a</span><span class='o'>+</span><span class='mi'>1</span><span class='p'>)</span><span class='o'>.</span><span class='s1'>&#39;&quot;&gt;next attempt&lt;/a&gt;&lt;br/&gt;&#39;</span><span class='p'>;</span>
+
+<span class='k'>echo</span> <span class='s2'>&quot;2-1 semester&quot;</span><span class='p'>;</span>
+<span class='nx'>pmarks</span><span class='p'>(</span><span class='mi'>21</span><span class='p'>,</span><span class='nv'>$_GET</span><span class='p'>[</span><span class='s1'>&#39;r&#39;</span><span class='p'>]</span><span class='o'>==</span><span class='mi'>21</span><span class='o'>?</span><span class='nv'>$a</span><span class='o'>:</span><span class='mi'>1</span><span class='p'>,</span><span class='nv'>$no</span><span class='p'>);</span>
+<span class='k'>echo</span> <span class='nv'>$a</span><span class='o'>==</span><span class='mi'>4</span><span class='o'>?:</span><span class='s1'>&#39;&lt;a href=&quot;?no=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='o'>.</span><span class='s1'>&#39;&amp;r=21&amp;a=&#39;</span><span class='o'>.</span><span class='p'>(</span><span class='nv'>$a</span><span class='o'>+</span><span class='mi'>1</span><span class='p'>)</span><span class='o'>.</span><span class='s1'>&#39;&quot;&gt;next attempt&lt;/a&gt;&lt;br/&gt;&#39;</span><span class='p'>;</span>
+
+<span class='k'>echo</span> <span class='s2'>&quot;2-2 semester &quot;</span><span class='p'>;</span>
+<span class='nx'>pmarks</span><span class='p'>(</span><span class='mi'>22</span><span class='p'>,</span><span class='nv'>$_GET</span><span class='p'>[</span><span class='s1'>&#39;r&#39;</span><span class='p'>]</span><span class='o'>==</span><span class='mi'>22</span><span class='o'>?</span><span class='nv'>$a</span><span class='o'>:</span><span class='mi'>1</span><span class='p'>,</span><span class='nv'>$no</span><span class='p'>);</span>
+<span class='k'>echo</span> <span class='nv'>$a</span><span class='o'>==</span><span class='mi'>3</span><span class='o'>?:</span><span class='s1'>&#39;&lt;a href=&quot;?no=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='o'>.</span><span class='s1'>&#39;&amp;r=22&amp;a=&#39;</span><span class='o'>.</span><span class='p'>(</span><span class='nv'>$a</span><span class='o'>+</span><span class='mi'>1</span><span class='p'>)</span><span class='o'>.</span><span class='s1'>&#39;&quot;&gt;next attempt&lt;/a&gt;&lt;br/&gt;&#39;</span><span class='p'>;</span>
+
+<span class='k'>echo</span> <span class='s2'>&quot;3-1 semester&quot;</span><span class='p'>;</span>
+<span class='nx'>pmarks</span><span class='p'>(</span><span class='mi'>31</span><span class='p'>,</span><span class='nv'>$_GET</span><span class='p'>[</span><span class='s1'>&#39;r&#39;</span><span class='p'>]</span><span class='o'>==</span><span class='mi'>31</span><span class='o'>?</span><span class='nv'>$a</span><span class='o'>:</span><span class='mi'>1</span><span class='p'>,</span><span class='nv'>$no</span><span class='p'>);</span>
+<span class='k'>echo</span> <span class='nv'>$a</span><span class='o'>==</span><span class='mi'>2</span><span class='o'>?:</span><span class='s1'>&#39;&lt;a href=&quot;?no=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='o'>.</span><span class='s1'>&#39;&amp;r=31&amp;a=&#39;</span><span class='o'>.</span><span class='p'>(</span><span class='nv'>$a</span><span class='o'>+</span><span class='mi'>1</span><span class='p'>)</span><span class='o'>.</span><span class='s1'>&#39;&quot;&gt;next attempt&lt;/a&gt;&lt;br/&gt;&#39;</span><span class='p'>;</span>
+
+<span class='k'>echo</span> <span class='s2'>&quot;3-2 semester&quot;</span><span class='p'>;</span>
+<span class='nx'>pmarks</span><span class='p'>(</span><span class='mi'>32</span><span class='p'>,</span><span class='nv'>$_GET</span><span class='p'>[</span><span class='s1'>&#39;r&#39;</span><span class='p'>]</span><span class='o'>==</span><span class='mi'>32</span><span class='o'>?</span><span class='nv'>$a</span><span class='o'>:</span><span class='mi'>1</span><span class='p'>,</span><span class='nv'>$no</span><span class='p'>);</span>
+<span class='k'>echo</span> <span class='nv'>$a</span><span class='o'>==</span><span class='mi'>1</span><span class='o'>?:</span><span class='s1'>&#39;&lt;a href=&quot;?no=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='o'>.</span><span class='s1'>&#39;&amp;r=32&amp;a=&#39;</span><span class='o'>.</span><span class='p'>(</span><span class='nv'>$a</span><span class='o'>+</span><span class='mi'>1</span><span class='p'>)</span><span class='o'>.</span><span class='s1'>&#39;&quot;&gt;next attempt&lt;/a&gt;&lt;br/&gt;&#39;</span><span class='p'>;</span>
+<span class='p'>}</span>
+
+
+<span class='k'>function</span> <span class='nf'>pmarks</span><span class='p'>(</span><span class='nv'>$year</span><span class='p'>,</span><span class='nv'>$attempt</span><span class='p'>,</span><span class='nv'>$no</span><span class='p'>)</span>
+<span class='p'>{</span>
+<span class='k'>if</span><span class='p'>(</span><span class='nv'>$year</span><span class='o'>==</span><span class='mi'>1</span><span class='p'>)</span>
+ <span class='p'>{</span>
+   
+   <span class='k'>if</span><span class='p'>(</span><span class='nv'>$attempt</span><span class='o'>==</span><span class='mi'>1</span><span class='p'>)</span>
+    <span class='k'>echo</span> <span class='nb'>file_get_contents</span><span class='p'>(</span><span class='s1'>&#39;http://www.schools9.com/jntuk0307.aspx?htno=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='p'>);</span>
+   <span class='k'>if</span><span class='p'>(</span><span class='nv'>$attempt</span><span class='o'>==</span><span class='mi'>2</span><span class='p'>)</span>
+    <span class='k'>echo</span> <span class='nb'>file_get_contents</span><span class='p'>(</span><span class='s1'>&#39;http://www.schools9.com/jntuk270120111.aspx?htno=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='p'>);</span>
+   <span class='k'>if</span><span class='p'>(</span><span class='nv'>$attempt</span><span class='o'>==</span><span class='mi'>3</span><span class='p'>)</span>
+    <span class='k'>echo</span> <span class='nb'>file_get_contents</span><span class='p'>(</span><span class='s1'>&#39;http://www.schools9.com/jntuk0207.aspx?htno=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='p'>);</span>
+   <span class='k'>if</span><span class='p'>(</span><span class='nv'>$attempt</span><span class='o'>==</span><span class='mi'>4</span><span class='p'>)</span>
+    <span class='k'>echo</span> <span class='nb'>file_get_contents</span><span class='p'>(</span><span class='s1'>&#39;http://www.schools9.com/jntuk3001.aspx?htno=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='p'>);</span>
+   <span class='k'>if</span><span class='p'>(</span><span class='nv'>$attempt</span><span class='o'>==</span><span class='mi'>5</span><span class='p'>)</span>
+    <span class='k'>echo</span> <span class='nb'>file_get_contents</span><span class='p'>(</span><span class='s1'>&#39;http://www.schools9.com/jntuk-exam-results-btech1307.aspx?htno=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='p'>);</span>
+ <span class='p'>}</span>
+ <span class='k'>if</span><span class='p'>(</span><span class='nv'>$year</span><span class='o'>==</span><span class='mi'>21</span><span class='p'>)</span>
+ <span class='p'>{</span>
+   <span class='k'>if</span><span class='p'>(</span><span class='nv'>$attempt</span><span class='o'>==</span><span class='mi'>1</span><span class='p'>)</span>
+    <span class='k'>echo</span> <span class='nb'>file_get_contents</span><span class='p'>(</span><span class='s1'>&#39;http://www.schools9.com/jntuk10012011.aspx?htno=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='p'>);</span>
+   <span class='k'>if</span><span class='p'>(</span><span class='nv'>$attempt</span><span class='o'>==</span><span class='mi'>2</span><span class='p'>)</span>
+    <span class='k'>echo</span> <span class='nb'>file_get_contents</span><span class='p'>(</span><span class='s1'>&#39;http://www.schools9.com/jntuk22061.aspx?htno=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='p'>);</span>
+   <span class='k'>if</span><span class='p'>(</span><span class='nv'>$attempt</span><span class='o'>==</span><span class='mi'>3</span><span class='p'>)</span>
+    <span class='k'>echo</span> <span class='nb'>file_get_contents</span><span class='p'>(</span><span class='s1'>&#39;http://www.schools9.com/jntuk13011.aspx?htno=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='p'>);</span>
+   <span class='k'>if</span><span class='p'>(</span><span class='nv'>$attempt</span><span class='o'>==</span><span class='mi'>4</span><span class='p'>)</span>
+    <span class='k'>echo</span> <span class='nb'>file_get_contents</span><span class='p'>(</span><span class='s1'>&#39;http://www.schools9.com/jntuk-exam-results-r21.aspx?htno=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='p'>);</span>
+ <span class='p'>}</span>
+ <span class='k'>if</span><span class='p'>(</span><span class='nv'>$year</span><span class='o'>==</span><span class='mi'>22</span><span class='p'>)</span>
+ <span class='p'>{</span>
+   <span class='k'>if</span><span class='p'>(</span><span class='nv'>$attempt</span><span class='o'>==</span><span class='mi'>1</span><span class='p'>)</span>
+    <span class='k'>echo</span> <span class='nb'>file_get_contents</span><span class='p'>(</span><span class='s1'>&#39;http://www.schools9.com/jntuk1206.aspx?htno=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='p'>);</span>
+   <span class='k'>if</span><span class='p'>(</span><span class='nv'>$attempt</span><span class='o'>==</span><span class='mi'>2</span><span class='p'>)</span>
+    <span class='k'>echo</span> <span class='nb'>file_get_contents</span><span class='p'>(</span><span class='s1'>&#39;http://www.schools9.com/jntuk2401.htm?htno=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='p'>);</span>
+   <span class='k'>if</span><span class='p'>(</span><span class='nv'>$attempt</span><span class='o'>==</span><span class='mi'>3</span><span class='p'>)</span>
+    <span class='k'>echo</span> <span class='nb'>file_get_contents</span><span class='p'>(</span><span class='s1'>&#39;http://www.schools9.com/jntuk2401.aspx?htno=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='p'>);</span>
+ <span class='p'>}</span>
+ <span class='k'>if</span><span class='p'>(</span><span class='nv'>$year</span><span class='o'>==</span><span class='mi'>31</span><span class='p'>)</span>
+ <span class='p'>{</span>
+   <span class='k'>if</span><span class='p'>(</span><span class='nv'>$attempt</span><span class='o'>==</span><span class='mi'>1</span><span class='p'>)</span>
+    <span class='k'>echo</span> <span class='nb'>file_get_contents</span><span class='p'>(</span><span class='s1'>&#39;http://www.schools9.com/jntuk0701.aspx?htno=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='p'>);</span>
+   <span class='k'>if</span><span class='p'>(</span><span class='nv'>$attempt</span><span class='o'>==</span><span class='mi'>2</span><span class='p'>)</span>
+    <span class='k'>echo</span> <span class='nb'>file_get_contents</span><span class='p'>(</span><span class='s1'>&#39;http://www.schools9.com/jntuk-exam-results-rrr.aspx?htno=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='p'>);</span>
+ <span class='p'>}</span>
+ <span class='k'>if</span><span class='p'>(</span><span class='nv'>$year</span><span class='o'>==</span><span class='mi'>32</span><span class='p'>)</span>
+ <span class='p'>{</span>
+   <span class='k'>if</span><span class='p'>(</span><span class='nv'>$attempt</span><span class='o'>==</span><span class='mi'>1</span><span class='p'>)</span>
+    <span class='k'>echo</span> <span class='nb'>file_get_contents</span><span class='p'>(</span><span class='s1'>&#39;http://www.schools9.com/jntuk-exam-results-be32.aspx?htno=&#39;</span><span class='o'>.</span><span class='nv'>$no</span><span class='p'>);</span>
+    
+ <span class='p'>}</span>
+<span class='p'>}</span>
+<span class='cp'>?&gt;</span><span class='x' />
+</code></pre>
+</div>
+<p>please mention any suggestion or code updates if any in comments over here</p>
+    <hr>
+    <div class="pagination btn-group">
+      
+        <a class="btn disabled prev">&larr; Previous</a>
+      
+        <a class="btn" href="/archive.html">Archive</a>
+      
+        <a class="btn next" href="/mywork/php/TalentHunt.html" title="Talent Hunt">Next &rarr;</a>
+      
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'pieboy'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <section>
+      <h4>Published</h4>
+      <div class="date"><span>01 January 2013</span></div>
+    </section>
+    <section>
+      <h4>Catergory</h4>
+    <ul class="tag_box inline">
+    
+    
+
+
+  
+     
+    	<li><a href="/categories.html#myworkphp-ref">
+    		mywork/php <span>2</span>
+    	</a></li>
+    
+  
+
+
+    </ul>    
+    </section>
+    
+      <section>
+        <h4>Tags</h4>
+        <ul class="tag_box">
+          
+          
+
+
+  
+     
+    	<li><a href="/tags.html#php-ref">php <span>2</span></a></li>
+     
+    	<li><a href="/tags.html#html-ref">html <span>2</span></a></li>
+    
+  
+
+
+
+        </ul>
+      </section>
+             
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Ravi Teja 2012 
+          
+        </p>
+      </footer>
+    </div> <!-- /container -->
+    
+  </body>
+</html>
+

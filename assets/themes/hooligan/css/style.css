@@ -403,3 +403,9 @@ div.sidebar section img.icon {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
+table{
+  border:none;
+}
+input, input[type="file"], select, textarea, .progress, code, pre {
+  webkit-box-shadow: none;
+}
