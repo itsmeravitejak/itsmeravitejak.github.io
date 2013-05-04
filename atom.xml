@@ -4,7 +4,7 @@
  <title>RaviTeja</title>
  <link href="http://pieboy.github.com/atom.xml" rel="self"/>
  <link href="http://pieboy.github.com"/>
- <updated>2013-01-01T22:18:25+05:30</updated>
+ <updated>2013-05-04T17:59:35+05:30</updated>
  <id>http://pieboy.github.com</id>
  <author>
    <name>Ravi Teja</name>
@@ -26,8 +26,6 @@
 &lt;h1 id='talent_hunt'&gt;Talent Hunt&lt;/h1&gt;
 
 &lt;p&gt;&amp;#8212;&amp;#8211;An Online Examination System&lt;/p&gt;
-
-&lt;p&gt;How to Install(&lt;em&gt;before perfoming these steps download the project source files from the &lt;a href='https://github.com/pieboy/Talent-Hunt'&gt;github&lt;/a&gt; )&lt;/em&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Extract this Directory to your htdocs folder&lt;/li&gt;
