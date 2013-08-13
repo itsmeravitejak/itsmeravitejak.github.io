@@ -1,232 +1,336 @@
 
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>
-      
-        Hi Friends! - 
-      
-      RaviTeja
-    </title>
-    
-    <meta name="author" content="Ravi Teja">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Raviteja Kreative</title>
+	<meta name="description" content="">
+	<meta name="author" content=" Made by Keyners">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
 
 
-    
-    <script src="/assets/themes/hooligan/js/prism.js"></script>
-    <link type="text/css" rel="stylesheet" href="/assets/themes/hooligan/css/prismdark.css"/>
-    
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link href="/assets/themes/hooligan/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">    
-    <link rel="stylesheet" type="text/css" href="/assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css" />
-    <link href="/assets/themes/hooligan/css/pygments.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/assets/themes/hooligan/css/darkstrap.css" rel="stylesheet" type="text/css" media="all">    
-    <link href="/assets/themes/hooligan/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+	<!-- PT Sans -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-    
-    <!-- fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
-  </head>
+	<!-- Crete Roung -->
+	<link href='http://fonts.googleapis.com/css?family=Crete+Round&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-  <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container">
-          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>      
+	<!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+    <link href='http://fonts.googleapis.com/css?family=Sarina|Yesteryear' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/validate.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 
-          <a class="brand" href="/">RaviTeja</a>
+	<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	<script type="text/javascript">
+		$(document).ready(function() {
+				$("a.fancybox").fancybox({
+				'transitionIn'		: 'elastic',
+				'transitionOut'		: 'elastic',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+		});
+	</script>
+	
 
-
-          <div class="nav-collapse">
-            <ul class="nav">
-              
-              
-              
-
-
-  
-    
-      
-      	
-      	<li><a href="/archive.html">Archive</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/categories.html">Categories</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/pages.html">Pages</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/tags.html">Tags</a></li>
-      	
-      
-    
-  
+</head>
+<body>
 
 
+	<header>
+	<div class="divider"><div class="divider-red"></div><div class="divider-yellow"></div></div>				
+		<nav>
 
-            </ul>
-            <ul class="nav pull-right social visible-desktop">
-              <li class="divider-vertical"></li>
-              
-                <li>
-                  <a href="https://www.github.com/pieboy" class="zocial github icon" target="_blank">
-                    <span class="hidden-desktop">Github</a>
-                  </a>
-                </li>
-              
-                  
-              
-                <li>
-                  <a href="http://www.twitter.com/pieboy007" class="zocial twitter icon" target="_blank">
-                  <span class="hidden-desktop">Twitter</a>
-                  </a>
-                </li>
-                                        
-              
-                <li>
-                  <a href="http://www.facebook.com/pieboy007" class="zocial facebook icon" target="_blank">
-                    <span class="hidden-desktop">Facebook</a>
-                  </a>
-                </li>
-                         
-                                  
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+			<div class='container'>
+				<div class='five columns logo'>
+					<a href='#'>RaviTeja K</a>
+				</div>
 
-    <div class="container">
-      <div class="content">
-        
-<div class="page-header-wrapper">
-	<div class="page-header">
-  		<h1>Hi Friends!  <small>Its my Blog.................</small></h1>
-  	</div>
-</div>
+				<div class='eleven columns'>
+					<ul class='mainMenu'>
+					    <li><a href='http://blog.ravitejak.in' title='My Blog'>My Blog</a></li>
+						<li><a href='#whoami' title='About us'>Who Am I</a></li>
+						<li><a href='#portfolio' title='Portfolio'>Portfolio</a></li>
+						<li><a href='#contactme' title='Contact'>Contact Me</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-<div class="row">
-  <div class="span12">
-    <h1 id='h_friends_its_me_rvtej'>H! friends its me R@v!Tej@.</h1>
-
-<p>After a lots of trials and errors i finally got fixed into the jekyll world of blogging .Its crazy to blog with jekyll ,actually to explain this whole thing you basically need to have the basical knowledge of hosting and some experience in programming.Before the usage of jekyll i used wordpress a content management system in <code>php</code>,it was a wonderfull experience using <a href='http://www.wordpress.org'>wordpress</a>, but the reason to move to jekyll was the markup and its programmer friendly nature.</p>
-
-<h1 id='for_example_we_can_post_code_snippets_like_this'>For example we can post code snippets like this</h1>
-<div class='highlight'><pre><code class='c'> <span class='cp'>#include&lt;stdio.h&gt;</span>
- <span class='kt'>int</span> <span class='nf'>main</span><span class='p'>(</span><span class='kt'>int</span> <span class='n'>argc</span><span class='p'>,</span><span class='kt'>char</span> <span class='n'>argv</span><span class='p'>[])</span>
- <span class='p'>{</span>
-  <span class='kt'>int</span> <span class='n'>a</span><span class='o'>=</span><span class='mi'>0</span><span class='p'>;</span>
-  <span class='kt'>int</span> <span class='o'>*</span><span class='n'>b</span><span class='o'>=</span><span class='n'>a</span><span class='p'>;</span>
-  <span class='n'>printf</span><span class='p'>(</span><span class='s'>&quot;a value:%d&quot;</span><span class='p'>,</span><span class='n'>a</span><span class='p'>);</span>
-  <span class='n'>printf</span><span class='p'>(</span><span class='s'>&quot;pointer b value:%d&quot;</span><span class='p'>,</span><span class='o'>*</span><span class='n'>b</span><span class='p'>);</span>
- <span class='p'>}</span>
-</code></pre>
-</div>
-<h1 id='tables_are_posted_like_this'>Tables are posted like this</h1>
-
-<pre><code>Entity      | Result
-------------|----------
-`&amp;copy;`    |  &amp;copy;
-`&amp;pound;`   |  &amp;pound;
-`&amp;lambda;`  |  &amp;lambda;
-`&amp;mdash;`   |  &amp;mdash;</code></pre>
-
-<h1 id='then_it_will_be_converted_like_this'>then it will be converted like this</h1>
-<table><thead><tr><th>Entity</th><th>Result</th></tr></thead><tbody><tr><td style='text-align: left;'><code>&amp;copy;</code></td><td style='text-align: left;'>&#169;</td>
-</tr><tr><td style='text-align: left;'><code>&amp;pound;</code></td><td style='text-align: left;'>&#163;</td>
-</tr><tr><td style='text-align: left;'><code>&amp;lambda;</code></td><td style='text-align: left;'>&#955;</td>
-</tr><tr><td style='text-align: left;'><code>&amp;mdash;</code></td><td style='text-align: left;'>&#8212;</td>
-</tr></tbody></table>
-<h1 id='headings_like_this'>headings like this</h1>
-
-<pre><code># first level heading
-## second level heading
-### third level heading 
-### fourth level heading</code></pre>
-
-<p>will be converted like this</p>
-
-<h1 id='first_level_heading'>first level heading</h1>
-
-<h2 id='second_level_heading'>second level heading</h2>
-
-<h3 id='third_level_heading'>third level heading</h3>
-
-<h3 id='fourth_level_heading'>fourth level heading</h3>
-
-<p>easy huh thats why i opted to run this blog with jekyll actually jekyll is just a parser it just does nothing but parses files with tags and markup like the ones i mentioned above into html that you see here</p>
-
-<p>and finally i am even posting my work over here</p>
-
-<ul>
-<li><a href='mywork/php/TalentHunt.html'>Talent Hunt</a></li>
-
-<li><a href='mywork/php/Result-Grabber.html'>Result Grabber</a></li>
-</ul>
-
-<p><code>Note:</code> actually i will be moving this site to <code>ravitejak.me</code> soon</p>
-  </div>
-</div>
+		<div class='container'>
+			<div class='slogan'>
+				
+                
+				<div class='one-third column'>
+					
+					<img src="pic.jpg"  class="img-circle" />
+					
+				</div>
+				<div class='two-thirds column'>
+					<h1 class="biglogo">Raviteja Kreative</h1>
+					<h2 class="tagline">Try Different Be Different</h2>
+				</div>
+			</div>
+		</div>	
+	</header>
 
 
-      </div>
+	<div class='clear'></div>
+	<div class='clear'></div>
 
-      <footer>
-        <p>&copy; Ravi Teja 2012 
-          
-        </p>
-      </footer>
-    </div> <!-- /container -->
-    
- 
-<!-- Start of StatCounter Code for Default Guide -->
+
+	<div class='container' >
+        <a href="#whoami">
+		<div class='one-third column'>
+			<img src='images/misc/about_us.png'>
+			<h3>About Me</h3>
+		</div>
+        </a>
+
+        <a href="#portfolio">
+		<div class='one-third column'>
+			<img src='images/misc/work.png'>
+			<h3>My Work</h3>
+		</div>
+        </a>
+
+        <a href="#contactme">
+		<div class='one-third column'>
+			<img src='images/misc/contactus.png'>
+			<h3>Contact Me</h3>
+		</div>
+		</a>
+	</div>
+
+
+	<div class='clear'></div>
+
+
+	<div class='orange section' id="whoami">
+
+		<div class='container' >
+			<h3>Hello Iam Ravi </h3>
+			A  Web Developer
+			<p>I am not so talkative to pull out a essay on me.The day i was introduced to the the world of internet it changed my vision my idiology , from then i invented a new ME .I am used to Develop new concpets in design and processing data which are considered essential in this era of Internet Computing.</p><p>I use various advanced technologies/tools to drive my concepts in real time such as HTML5 , CSS3 , Jquery , PHP , MySQL , Jekyll , Amazon Web Services , JAVA,  J2EE , GIT , Sublime Text ,  and I can work comfortably in Either Linux Environment (Apache,NGinx,CMD interface,DB2 server,Oracle server,MySQl Server,using Emacs..etc) or Windows Environment(using Visual Studio,Eclipse,Oracle Server)</p>
+			
+			<a href='#portfolio' class='dalej'>Have a Look at my Work</a>
+		</div>
+
+	</div>
+
+
+	<div class='container focus' >
+
+		<h3 id="portfolio" >My Work</h3>
+
+		<div class='eight columns gallery'>
+			<h4>EStore</h4>
+			<a class="fancybox" rel="estore" href='images/estore/1.png'><img src='images/estore/1.png'></a>
+			<a class="fancybox" rel="estore" href='images/estore/2.png'><img src='images/estore/2.png'></a>
+			<a class="fancybox" rel="estore" href='images/estore/3.png'><img src='images/estore/3.png'></a>
+			<a class="fancybox" rel="estore" href='images/estore/4.png'><img src='images/estore/4.png'></a>
+			<a class="fancybox" rel="estore" href='images/estore/5.png'><img src='images/estore/5.png'></a>
+			<a class="fancybox" rel="estore" href='images/estore/6.png'><img src='images/estore/6.png'></a>
+			<a class="fancybox" rel="estore" href='images/estore/7.png'><img src='images/estore/7.png'></a>
+			<a class="fancybox" rel="estore" href='images/estore/8.png'><img src='images/estore/8.png'></a>
+			<a class="fancybox" rel="estore" href='images/estore/9.png'><img src='images/estore/9.png'></a>
+		</div>
+
+		<div class='eight columns gallery'>
+			<h4>Event Management System</h4>
+			<a class="fancybox" rel="vkrfest" href='images/vkrfest/1.png'><img src='images/vkrfest/1.png'></a>
+			<a class="fancybox" rel="vkrfest" href='images/vkrfest/2.png'><img src='images/vkrfest/2.png'></a>
+			<a class="fancybox" rel="vkrfest" href='images/vkrfest/3.png'><img src='images/vkrfest/3.png'></a>
+			<a class="fancybox" rel="vkrfest" href='images/vkrfest/4.png'><img src='images/vkrfest/4.png'></a>
+			<a class="fancybox" rel="vkrfest" href='images/vkrfest/5.png'><img src='images/vkrfest/5.png'></a>
+			<a class="fancybox" rel="vkrfest" href='images/vkrfest/6.png'><img src='images/vkrfest/6.png'></a>
+			<a class="fancybox" rel="vkrfest" href='images/vkrfest/7.png'><img src='images/vkrfest/7.png'></a>
+			<a class="fancybox" rel="vkrfest" href='images/vkrfest/8.png'><img src='images/vkrfest/8.png'></a>
+			<a class="fancybox" rel="vkrfest" href='images/vkrfest/9.png'><img src='images/vkrfest/9.png'></a>
+			<a class="fancybox" rel="vkrfest" href='images/vkrfest/10.png'><img src='images/vkrfest/10.png'></a>
+			<a class="fancybox" rel="vkrfest" href='images/vkrfest/11.png'><img src='images/vkrfest/11.png'></a>
+
+		</div>
+
+
+		<div class='clear'></div>
+
+
+		<div class='eight columns gallery'>
+			<h4>Link2pay</h4>
+			<a class="fancybox" rel="link2pay" href='images/link2pay/1.png'><img src='images/link2pay/1.png'></a>
+			<a class="fancybox" rel="link2pay" href='images/link2pay/2.png'><img src='images/link2pay/2.png'></a>
+			
+		</div>
+
+		<div class='eight columns gallery'>
+			<h4>Library Management System</h4>
+			<a class="fancybox" rel="lms" href='images/lms/1.png'><img src='images/lms/1.png'></a>
+			<a class="fancybox" rel="lms" href='images/lms/2.png'><img src='images/lms/2.png'></a>
+			<a class="fancybox" rel="lms" href='images/lms/3.png'><img src='images/lms/3.png'></a>
+			<a class="fancybox" rel="lms" href='images/lms/4.png'><img src='images/lms/4.png'></a>
+			<a class="fancybox" rel="lms" href='images/lms/5.png'><img src='images/lms/5.png'></a>
+			<a class="fancybox" rel="lms" href='images/lms/6.png'><img src='images/lms/6.png'></a>
+		</div>
+
+	</div>
+
+	<div class='clear'></div>
+	<div class='clear'></div>
+
+	<section class='gray'>
+		<div class='container section' >
+			<div class='two-thirds column'>
+				<h3>Talent Hunt(An Online Examination System):</h3>
+				<p>This is a Online Examination System which was to developed to aid the examiners for conducting fast and free of cost(excluding cost for running the hardware for running this software). </p>
+					<h3>Technologies Used</h3>
+				<p>HTML,CSS,PHP,MySQl </p>
+			    <h3>Check the source of the project at <h5><a href="https://github.com/pieboy/Talent-Hunt">GITHUB</a></h5></h3>
+			</div>
+            
+			<div class='one-third column gallery'>
+				<h3>ScreenShots</h3>
+				<a class="fancybox" rel="talenthunt" href='images/talenthunt/1.png'><img src='images/talenthunt/1.png'></a>
+				<a class="fancybox" rel="talenthunt" href='images/talenthunt/2.png'><img src='images/talenthunt/2.png'></a>
+				<a class="fancybox" rel="talenthunt" href='images/talenthunt/3.png'><img src='images/talenthunt/3.png'></a>
+				<a class="fancybox" rel="talenthunt" href='images/talenthunt/4.png'><img src='images/talenthunt/4.png'></a>
+				<a class="fancybox" rel="talenthunt" href='images/talenthunt/5.png'><img src='images/talenthunt/5.png'></a>
+				<a class="fancybox" rel="talenthunt" href='images/talenthunt/6.png'><img src='images/talenthunt/6.png'></a>
+				<a class="fancybox" rel="talenthunt" href='images/talenthunt/7.png'><img src='images/talenthunt/7.png'></a>
+				<a class="fancybox" rel="talenthunt" href='images/talenthunt/8.png'><img src='images/talenthunt/8.png'></a>
+				<a class="fancybox" rel="talenthunt" href='images/talenthunt/9.png'><img src='images/talenthunt/9.png'></a>
+			</div>
+			
+			
+		</div>
+	</section>
+
+
+    <section class='gray'>
+		<div class='container section' >
+			<div class='two-thirds column'>
+				<h3>Insurance System With Tracking Manager</h3>
+				<p>This is a Web Application written in JSP, Servlets and Beans, This application helps users to take insurance online and the officials to manage their clients online. This project merely transforms the process of insurance taking from paper to online. </p>
+					<h3>Technologies Used</h3>
+				<p>HTML,CSS,JAVA,J2EE,DB2,JSP,SERVLETS </p>
+			    
+			</div>
+            
+			<div class='one-third column gallery'>
+				<h3>ScreenShots</h3>
+				<a class="fancybox" rel="ims" href='images/ims/1.png'><img src='images/ims/1.png'></a>
+				<a class="fancybox" rel="ims" href='images/ims/2.png'><img src='images/ims/2.png'></a>
+				<a class="fancybox" rel="ims" href='images/ims/3.png'><img src='images/ims/3.png'></a>
+				
+			</div>
+			
+			
+		</div>
+	</section>
+	<div class='clear'></div>
+
+
+	<div class='container' >
+		<div class='sixteen columns form section' id="contactme">
+			<iframe src="https://docs.google.com/forms/d/1KXd3kXt3B3e--7ACOvEJXCPFUMpOy-4tWpu68UnJkxw/viewform?entry.673439130=Your+Name&entry.82429889=Your+E-mail&entry.289163567=Your+message&embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+		</div>
+		<h1 id="formoutput" style="display:none" ></h1>
+	</div>
+
+
+	<div class='clear'></div>
+
+
+	<footer>
+		<div class='container'>
+			
+			<div class='six columns'>
+				<!--
+    PeoplePerHour Profile Widget
+    The div#pph-hire me is the element
+    where the iframe will be inserted.
+    You may move this element wherever
+    you need to display the widget
+-->
+<div id="pph-hireme"></div>
+<script type="text/javascript">
+(function(d, s) {
+    var useSSL = 'https:' == document.location.protocol;
+    var js, where = d.getElementsByTagName(s)[0],
+    js = d.createElement(s);
+    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/2015486017/191656.js?width=300&height=135&orientation=vertical&theme=dark&rnd='+parseInt(Math.random()*10000, 10);
+    try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+}(document, 'script'));
+</script>
+			</div>
+
+			<div class='four columns social'>
+				<h5>Social media</h5>
+				<a href='https://github.com/pieboy'><img src='images/social/github.png'></a>
+				<a href='https://facebook.com/ravitejak.in'><img src='images/social/facebook.png'></a>
+				<a href='http://twitter.com/itsmeravitejak'><img src='images/social/twitter.png'></a>
+				<a href='http://about.me/ravitejak'><img src='images/social/me.png'></a>
+			</div>
+
+			<div class='four columns'>
+				<h5>Get in touch</h5>
+				<p>You can call me at:<br>
+					M: +91 879-061-3549 </p>
+				<p>Or drop us a line on:
+					E: <a href='mailto:ravitejak@live.in'>ravitejak@live.in</a></p>
+			</div>
+
+
+		<a id='top' href='#'>&uarr;</a>	
+		</div>
+	</footer>
+	
+
+
+	<script type="text/javascript">
+		var toper = $('a#top');
+
+
+		$(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                toper.fadeIn( 200 );
+            } else {
+                toper.fadeOut( 200 );
+            }
+        });
+
+         toper.click(function(){
+        	$('html, body').animate({scrollTop:0}, 500);	        	
+        	return false;
+    	}); 
+         
+	</script>
+<script src="js/jquery.form.js"></script> 
+ <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
 var sc_project=8927331; 
 var sc_invisible=1; 
@@ -237,13 +341,15 @@ document.write("<sc"+"ript type='text/javascript' src='" +
 scJsHost+
 "statcounter.com/counter/counter.js'></"+"script>");
 </script>
-<noscript><div class="statcounter"><a title="web stats"
-href="http://statcounter.com/" target="_blank"><img
-class="statcounter"
+<noscript><div class="statcounter"><a title="hits counter"
+href="http://statcounter.com/free-hit-counter/"
+target="_blank"><img class="statcounter"
 src="http://c.statcounter.com/8927331/0/33a9100c/1/"
-alt="web stats"></a></div></noscript>
+alt="hits counter"></a></div></noscript>
 <!-- End of StatCounter Code for Default Guide -->
 
-  </body>
+</body>
 </html>
+
+
 
