@@ -328,3 +328,18 @@ div.divider{
 }
 
 
+.hlite{
+background: #df4a00;
+color: #fff;
+margin: 0 auto 20px;
+padding: 10px 20px;
+font-size: 12px;
+text-transform: uppercase;
+border-radius: 30px;
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+}
+span.hlite:hover{
+  background: #fff;
+color: #ff6a00;s
+}
