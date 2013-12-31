@@ -37,7 +37,7 @@
 	<![endif]-->
 
 	<script src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/validate.js"></script>
+	<!--<script type="text/javascript" src="js/validate.js"></script>-->
 	<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
@@ -65,15 +65,15 @@
 
 			<div class='container'>
 				<div class='five columns logo'>
-					<a href='#'>RaviTeja K</a>
+					<a href='#'>K RaviTeja</a>
 				</div>
 
-				<div class='eleven columns'>
+				<div class='eleven columns '>
 					<ul class='mainMenu'>
 					    <li><a href='http://blog.ravitejak.in' title='My Blog'>My Blog</a></li>
-						<li><a href='#whoami' title='About us'>Who Am I</a></li>
-						<li><a href='#portfolio' title='Portfolio'>Portfolio</a></li>
-						<li><a href='#contactme' title='Contact'>Contact Me</a></li>
+						<li><a href='#whoami' onClick="scrollToDIV('whoami')" title='About us'>Who Am I</a></li>
+						<li><a href='#portfolio' onClick="scrollToDIV('portfolio')" title='Portfolio'>Portfolio</a></li>
+						<li><a href='#contactme' onClick="scrollToDIV('contactme')" title='Contact'>Contact Me</a></li>
 					</ul>
 				</div>
 			</div>
@@ -89,8 +89,8 @@
 					
 				</div>
 				<div class='two-thirds column'>
-					<h1 class="biglogo">Raviteja Kreative</h1>
-					<h2 class="tagline">Try Different Be Different</h2>
+					<h1 class="biglogo"><img src="logo.png" alt="K Ravi Teja" width="50%"></h1>
+					<h2 class="tagline">Try New Be the New</h2>
 				</div>
 			</div>
 		</div>	
@@ -179,9 +179,7 @@
 
 
 		<div class='eight columns gallery'>
-			<h4>Link2pay</h4>
-			<a class="fancybox" rel="link2pay" href='images/link2pay/1.png'><img src='images/link2pay/1.png'></a>
-			<a class="fancybox" rel="link2pay" href='images/link2pay/2.png'><img src='images/link2pay/2.png'></a>
+		
 			
 		</div>
 
@@ -212,15 +210,15 @@
             
 			<div class='one-third column gallery'>
 				<h3>ScreenShots</h3>
-				<a class="fancybox" rel="talenthunt" href='images/talenthunt/1.png'><img src='images/talenthunt/1.png'></a>
-				<a class="fancybox" rel="talenthunt" href='images/talenthunt/2.png'><img src='images/talenthunt/2.png'></a>
-				<a class="fancybox" rel="talenthunt" href='images/talenthunt/3.png'><img src='images/talenthunt/3.png'></a>
-				<a class="fancybox" rel="talenthunt" href='images/talenthunt/4.png'><img src='images/talenthunt/4.png'></a>
-				<a class="fancybox" rel="talenthunt" href='images/talenthunt/5.png'><img src='images/talenthunt/5.png'></a>
-				<a class="fancybox" rel="talenthunt" href='images/talenthunt/6.png'><img src='images/talenthunt/6.png'></a>
-				<a class="fancybox" rel="talenthunt" href='images/talenthunt/7.png'><img src='images/talenthunt/7.png'></a>
-				<a class="fancybox" rel="talenthunt" href='images/talenthunt/8.png'><img src='images/talenthunt/8.png'></a>
-				<a class="fancybox" rel="talenthunt" href='images/talenthunt/9.png'><img src='images/talenthunt/9.png'></a>
+				
+				<a class="fancybox" rel="talenthunt" href='images/talenthunt/2.jpg'><img src='images/talenthunt/2.jpg'></a>
+				<a class="fancybox" rel="talenthunt" href='images/talenthunt/3.jpg'><img src='images/talenthunt/3.jpg'></a>
+				<a class="fancybox" rel="talenthunt" href='images/talenthunt/4.jpg'><img src='images/talenthunt/4.jpg'></a>
+				<a class="fancybox" rel="talenthunt" href='images/talenthunt/5.jpg'><img src='images/talenthunt/5.jpg'></a>
+				<a class="fancybox" rel="talenthunt" href='images/talenthunt/6.jpg'><img src='images/talenthunt/6.jpg'></a>
+				<a class="fancybox" rel="talenthunt" href='images/talenthunt/7.jpg'><img src='images/talenthunt/7.jpg'></a>
+				<a class="fancybox" rel="talenthunt" href='images/talenthunt/8.jpg'><img src='images/talenthunt/8.jpg'></a>
+				<a class="fancybox" rel="talenthunt" href='images/talenthunt/9.jpg'><img src='images/talenthunt/9.jpg'></a>
 			</div>
 			
 			
@@ -298,9 +296,10 @@
 			<div class='four columns'>
 				<h5>Get in touch</h5>
 				<p>You can call me at:<br>
-					M: +91 879-061-3549 </p>
-				<p>Or drop us a line on:
-					E: <a href='mailto:ravitejak@live.in'>ravitejak@live.in</a></p>
+					Mobile: +91 879-061-3549 </p>
+				<p>Or drop me a line on</p>
+				<p>
+					E-mail: <a href='mailto:ravitejak@live.in'>ravitejak@live.in</a></p>
 			</div>
 
 
@@ -326,9 +325,11 @@
         	$('html, body').animate({scrollTop:0}, 500);	        	
         	return false;
     	}); 
-         
+         function scrollToDIV(id){
+         	$('html,body').animate({scrollTop:$("#"+id).offset().top},1000);
+         }
 	</script>
-<script src="js/jquery.form.js"></script> 
+<!--<script src="js/jquery.form.js"></script> -->
  <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
 var sc_project=8927331; 
