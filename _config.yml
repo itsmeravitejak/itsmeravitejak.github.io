@@ -1,0 +1,10 @@
+title:        'Raviteja.K'
+tagline:      "A Web Developer"
+url:		"http://www.ravitejak.in"
+author:
+  name:       "Raviteja.K"
+  email:      "ravitejak@live.in"
+
+permalink:    pretty
+pygments:     true
+paginate:     5
