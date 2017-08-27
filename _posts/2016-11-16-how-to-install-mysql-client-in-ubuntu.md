@@ -3,7 +3,7 @@ layout: post
 title: How to install Mysql Client in Ubuntu
 ---
 
-##Installing Mysql client for php  in ubuntu 
+## Installing Mysql client for php  in ubuntu 
 
  
 ```
